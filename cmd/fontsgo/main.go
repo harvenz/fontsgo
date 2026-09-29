@@ -8,6 +8,11 @@ import (
 func main() {
 	args := os.Args[1:]
 
+	if len(args) < 2 {
+		fmt.Println("usage: fontsgo install <font>")
+		return
+	}
+
 	command := args[0]
 	font := args[1]
 
